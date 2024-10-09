@@ -194,7 +194,7 @@ class DataLayer(QObject):
             raw_data_list.append(PpgRawData(raw))
 
         hr_data = PpgHrResData(report.hr_res.hr, report.hr_res.hr_conf, report.hr_res.wear)
-        hrv_data = PpgHrvResData(report.hrv_res.rr_arr, report.hrv_res.rr_conf)
+        hrv_data = PpgHrvResData(list(report.hrv_res.rr_arr), report.hrv_res.rr_conf)
 
         ppg_data_class = PpgData(report_rate=convert_sample_rate,
                                  hr_data=hr_data,
@@ -226,7 +226,7 @@ class DataLayer(QObject):
                                      "ir": ppg_data_class.ppg_raw_ir_list,
                                      "red": ppg_data_class.ppg_raw_red_list,
                                      }
-
+        print(data_dict)
         if self._save_data_file_path:
             save_data_to_file("{}_ppg.txt".format(self._save_data_file_path), data_dict)
 
