@@ -14,19 +14,19 @@ _sym_db = _symbol_database.Default()
 import aura_common_pb2 as aura__common__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x11\x61ura_record.proto\x12\x11tech.brainco.aura\x1a\x11\x61ura_common.proto\"I\n\x06Record\x12\x11\n\ttimestamp\x18\x01 \x01(\x04\x12,\n\x04\x64\x61ta\x18\x02 \x01(\x0b\x32\x1e.tech.brainco.aura.RecordValue\"~\n\rSessionRecord\x12\x11\n\trecord_id\x18\x01 \x01(\r\x12\x17\n\x0fstart_timestamp\x18\x02 \x01(\x04\x12\x15\n\rend_timestamp\x18\x03 \x01(\x04\x12*\n\x07results\x18\x04 \x03(\x0b\x32\x19.tech.brainco.aura.Record\"\xab\x01\n\x0bRecordValue\x12+\n\x04type\x18\x01 \x01(\x0e\x32\x1d.tech.brainco.aura.RecordType\x12\x13\n\tint_value\x18\x02 \x01(\rH\x00\x12\x15\n\x0b\x66loat_value\x18\x03 \x01(\x02H\x00\x12:\n\x0e\x61\x63tivity_state\x18\x04 \x01(\x0e\x32 .tech.brainco.aura.ActivityStateH\x00\x42\x07\n\x05value*}\n\nRecordType\x12\x11\n\rDataType_NONE\x10\x00\x12\x0e\n\nHEART_RATE\x10\x01\x12\x0e\n\nSTEP_COUNT\x10\x02\x12\x12\n\x0eSTEP_FREQUENCY\x10\x03\x12\x12\n\x0e\x41\x43TIVITY_STATE\x10\x04\x12\x14\n\x10MOTION_MAGNITUDE\x10\x05\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x11\x61ura_record.proto\x12\x11tech.brainco.aura\x1a\x11\x61ura_common.proto\"\x93\x03\n\x06Record\x12\x11\n\ttimestamp\x18\x01 \x01(\x04\x12\x32\n\x04type\x18\x02 \x01(\x0e\x32$.tech.brainco.aura.Record.RecordType\x12\x13\n\tint_value\x18\x03 \x01(\rH\x00\x12\x15\n\x0b\x66loat_value\x18\x04 \x01(\x02H\x00\"\x97\x01\n\nRecordType\x12\x11\n\rDataType_NONE\x10\x00\x12\t\n\x05\x45VENT\x10\x01\x12\x11\n\rHEART_RATE_IC\x10\x02\x12\x0e\n\nHEART_RATE\x10\x03\x12\x0e\n\nSPORT_MODE\x10\x04\x12\x14\n\x10MOTION_MAGNITUDE\x10\x05\x12\x0e\n\nSTEP_COUNT\x10\x06\x12\x12\n\x0eSTEP_FREQUENCY\x10\x07\"s\n\x0bRecordEvent\x12\x0e\n\nEVENT_NONE\x10\x00\x12\x0c\n\x08POWER_ON\x10\x01\x12\r\n\tPOWER_OFF\x10\x02\x12\x0b\n\x07PAIRING\x10\x03\x12\t\n\x05START\x10\n\x12\t\n\x05PAUSE\x10\x0b\x12\n\n\x06RESUME\x10\x0c\x12\x08\n\x04STOP\x10\rB\x07\n\x05value\"\xbe\x01\n\nRecordPage\x12\x0f\n\x07page_id\x18\x01 \x01(\r\x12\x0f\n\x07user_id\x18\x02 \x01(\t\x12\n\n\x02sn\x18\x03 \x01(\t\x12\x12\n\nfw_version\x18\x04 \x01(\t\x12\x10\n\x08\x66inished\x18\n \x01(\x08\x12.\n\x0brecord_data\x18\x0b \x03(\x0b\x32\x19.tech.brainco.aura.Record\x12,\n\x08gps_data\x18\x0c \x03(\x0b\x32\x1a.tech.brainco.aura.GpsDatab\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'aura_record_pb2', globals())
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  _RECORDTYPE._serialized_start=436
-  _RECORDTYPE._serialized_end=561
-  _RECORD._serialized_start=59
-  _RECORD._serialized_end=132
-  _SESSIONRECORD._serialized_start=134
-  _SESSIONRECORD._serialized_end=260
-  _RECORDVALUE._serialized_start=263
-  _RECORDVALUE._serialized_end=434
+  _RECORD._serialized_start=60
+  _RECORD._serialized_end=463
+  _RECORD_RECORDTYPE._serialized_start=186
+  _RECORD_RECORDTYPE._serialized_end=337
+  _RECORD_RECORDEVENT._serialized_start=339
+  _RECORD_RECORDEVENT._serialized_end=454
+  _RECORDPAGE._serialized_start=466
+  _RECORDPAGE._serialized_end=656
 # @@protoc_insertion_point(module_scope)

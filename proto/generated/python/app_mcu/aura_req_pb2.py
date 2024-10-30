@@ -15,7 +15,7 @@ import aura_ppg_pb2 as aura__ppg__pb2
 import aura_common_pb2 as aura__common__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0e\x61ura_req.proto\x12\x11tech.brainco.aura\x1a\x0e\x61ura_ppg.proto\x1a\x11\x61ura_common.proto\"\xf7\x01\n\x07\x41uraReq\x12\x0e\n\x06msg_id\x18\x01 \x01(\r\x12\x36\n\rsensor_config\x18\x02 \x01(\x0b\x32\x1f.tech.brainco.aura.SensorConfig\x12\x36\n\rreport_config\x18\x03 \x01(\x0b\x32\x1f.tech.brainco.aura.RecordConfig\x12\x34\n\x0csport_config\x18\x04 \x01(\x0b\x32\x1e.tech.brainco.aura.SportConfig\x12\x36\n\rsport_control\x18\x05 \x01(\x0b\x32\x1f.tech.brainco.aura.SportControl\"\xe0\x01\n\x0cSensorConfig\x12\x30\n\nimu_config\x18\x01 \x01(\x0b\x32\x1c.tech.brainco.aura.ImuConfig\x12\x30\n\nppg_config\x18\x02 \x01(\x0b\x32\x1c.tech.brainco.aura.PpgConfig\x12\x30\n\ngps_config\x18\x03 \x01(\x0b\x32\x1c.tech.brainco.aura.GpsConfig\x12:\n\x0freport_interval\x18\x04 \x01(\x0e\x32!.tech.brainco.aura.ReportInterval\"W\n\x0cRecordConfig\x12\x16\n\x0eget_report_ids\x18\x01 \x01(\x08\x12\x15\n\rget_report_id\x18\x02 \x01(\r\x12\x18\n\x10\x64\x65lete_report_id\x18\x03 \x01(\r\"w\n\tImuConfig\x12\x18\n\x10\x61\x63\x63_subscription\x18\x01 \x01(\x08\x12\x19\n\x11gyro_subscription\x18\x02 \x01(\x08\x12\x35\n\x0bsample_rate\x18\x03 \x01(\x0e\x32 .tech.brainco.aura.ImuSampleRate\"\xdf\x02\n\tGpsConfig\x12\x43\n\x11gps_interval_walk\x18\x01 \x01(\x0e\x32(.tech.brainco.aura.GpsConfig.GpsAccuracy\x12\x46\n\x14gps_interval_running\x18\x02 \x01(\x0e\x32(.tech.brainco.aura.GpsConfig.GpsAccuracy\x12\x45\n\x13gps_interval_biking\x18\x03 \x01(\x0e\x32(.tech.brainco.aura.GpsConfig.GpsAccuracy\x12\x12\n\ngps_switch\x18\n \x01(\x08\"j\n\x0bGpsAccuracy\x12\x15\n\x11GPS_ACCURACY_NONE\x10\x00\x12\x14\n\x10GPS_ACCURACY_LOW\x10\x01\x12\x17\n\x13GPS_ACCURACY_MEDIUM\x10\x02\x12\x15\n\x11GPS_ACCURACY_HIGH\x10\x03\"S\n\x0bSportConfig\x12*\n\x04mode\x18\x01 \x01(\x0e\x32\x1c.tech.brainco.aura.SportMode\x12\x18\n\x10\x61uto_recognition\x18\x02 \x01(\x08\"\x7f\n\x0cSportControl\x12\x38\n\x07\x63ommand\x18\x01 \x01(\x0e\x32\'.tech.brainco.aura.SportControl.Command\"5\n\x07\x43ommand\x12\t\n\x05START\x10\x00\x12\t\n\x05PAUSE\x10\x01\x12\n\n\x06RESUME\x10\x02\x12\x08\n\x04STOP\x10\x03\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0e\x61ura_req.proto\x12\x11tech.brainco.aura\x1a\x0e\x61ura_ppg.proto\x1a\x11\x61ura_common.proto\"\x8e\x03\n\x07\x41uraReq\x12\x0e\n\x06msg_id\x18\x01 \x01(\r\x12\x36\n\rsensor_config\x18\x02 \x01(\x0b\x32\x1f.tech.brainco.aura.SensorConfig\x12\x36\n\rrecord_config\x18\x03 \x01(\x0b\x32\x1f.tech.brainco.aura.RecordConfig\x12\x34\n\x0csport_config\x18\x04 \x01(\x0b\x32\x1e.tech.brainco.aura.SportConfig\x12\x36\n\rsport_control\x18\x05 \x01(\x0b\x32\x1f.tech.brainco.aura.SportControl\x12\x16\n\x0esync_timestamp\x18\n \x01(\x04\x12.\n\tuser_info\x18\x0b \x01(\x0b\x32\x1b.tech.brainco.aura.UserInfo\x12\x36\n\ruser_settings\x18\x0c \x01(\x0b\x32\x1f.tech.brainco.aura.UserSettings\x12\x15\n\rdebug_enabled\x18\x14 \x01(\x08\"\xa4\x01\n\x0cSensorConfig\x12\x30\n\nimu_config\x18\x01 \x01(\x0b\x32\x1c.tech.brainco.aura.ImuConfig\x12\x30\n\nppg_config\x18\x02 \x01(\x0b\x32\x1c.tech.brainco.aura.PpgConfig\x12\x30\n\ngps_config\x18\x03 \x01(\x0b\x32\x1c.tech.brainco.aura.GpsConfig\"\xe3\x02\n\x0cRecordConfig\x12\x45\n\x13heart_rate_interval\x18\x01 \x01(\x0e\x32(.tech.brainco.aura.RecordConfig.Interval\x12\x45\n\x13\x61lgo_value_interval\x18\x02 \x01(\x0e\x32(.tech.brainco.aura.RecordConfig.Interval\x12\x14\n\x0cget_page_ids\x18\n \x01(\x08\x12\x10\n\x08get_page\x18\x0b \x01(\r\x12\x13\n\x0b\x64\x65lete_page\x18\x0c \x01(\r\"\x87\x01\n\x08Interval\x12\x11\n\rINTERVAL_NONE\x10\x00\x12\x10\n\x0cINTERVAL_OFF\x10\x01\x12\x0f\n\x0bINTERVAL_1S\x10\x02\x12\x0f\n\x0bINTERVAL_5S\x10\x03\x12\x10\n\x0cINTERVAL_10S\x10\x04\x12\x10\n\x0cINTERVAL_30S\x10\x05\x12\x10\n\x0cINTERVAL_60S\x10\x06\"w\n\tImuConfig\x12\x18\n\x10\x61\x63\x63_subscription\x18\x01 \x01(\x08\x12\x19\n\x11gyro_subscription\x18\x02 \x01(\x08\x12\x35\n\x0bsample_rate\x18\x03 \x01(\x0e\x32 .tech.brainco.aura.ImuSampleRate\"\x98\x06\n\tGpsConfig\x12\x43\n\x11gps_interval_walk\x18\x01 \x01(\x0e\x32(.tech.brainco.aura.GpsConfig.GpsInterval\x12\x46\n\x14gps_interval_running\x18\x02 \x01(\x0e\x32(.tech.brainco.aura.GpsConfig.GpsInterval\x12\x45\n\x13gps_interval_biking\x18\x03 \x01(\x0e\x32(.tech.brainco.aura.GpsConfig.GpsInterval\x12\x44\n\x12gps_interval_other\x18\x04 \x01(\x0e\x32(.tech.brainco.aura.GpsConfig.GpsInterval\x12\x13\n\x0bgps_enabled\x18\n \x01(\r\x12\x14\n\x0cwork_options\x18\x0b \x01(\r\"\x9c\x02\n\x0bGpsAccuracy\x12\x15\n\x11GPS_ACCURACY_NONE\x10\x00\x12\x13\n\x0fGPS_ACCURACY_1M\x10\x01\x12\x13\n\x0fGPS_ACCURACY_5M\x10\x02\x12\x14\n\x10GPS_ACCURACY_10M\x10\x03\x12\x14\n\x10GPS_ACCURACY_20M\x10\x04\x12\x14\n\x10GPS_ACCURACY_50M\x10\x05\x12\x15\n\x11GPS_ACCURACY_100M\x10\x06\x12\x15\n\x11GPS_ACCURACY_200M\x10\x07\x12\x15\n\x11GPS_ACCURACY_300M\x10\x08\x12\x15\n\x11GPS_ACCURACY_500M\x10\t\x12\x16\n\x12GPS_ACCURACY_1000M\x10\n\x12\x16\n\x12GPS_ACCURACY_3000M\x10\x0b\"\xa6\x01\n\x0bGpsInterval\x12\x15\n\x11GPS_INTERVAL_NONE\x10\x00\x12\x14\n\x10GPS_INTERVAL_OFF\x10\x01\x12\x13\n\x0fGPS_INTERVAL_1S\x10\x02\x12\x13\n\x0fGPS_INTERVAL_5S\x10\x03\x12\x14\n\x10GPS_INTERVAL_10S\x10\x04\x12\x14\n\x10GPS_INTERVAL_20S\x10\x05\x12\x14\n\x10GPS_INTERVAL_30S\x10\x06\"S\n\x0bSportConfig\x12*\n\x04mode\x18\x01 \x01(\x0e\x32\x1c.tech.brainco.aura.SportMode\x12\x18\n\x10\x61uto_recognition\x18\x02 \x01(\r\"\x7f\n\x0cSportControl\x12\x38\n\x07\x63ommand\x18\x01 \x01(\x0e\x32\'.tech.brainco.aura.SportControl.Command\"5\n\x07\x43ommand\x12\t\n\x05START\x10\x00\x12\t\n\x05PAUSE\x10\x01\x12\n\n\x06RESUME\x10\x02\x12\x08\n\x04STOP\x10\x03\x62\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'aura_req_pb2', globals())
@@ -23,21 +23,25 @@ if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   _AURAREQ._serialized_start=73
-  _AURAREQ._serialized_end=320
-  _SENSORCONFIG._serialized_start=323
-  _SENSORCONFIG._serialized_end=547
-  _RECORDCONFIG._serialized_start=549
-  _RECORDCONFIG._serialized_end=636
-  _IMUCONFIG._serialized_start=638
-  _IMUCONFIG._serialized_end=757
-  _GPSCONFIG._serialized_start=760
-  _GPSCONFIG._serialized_end=1111
-  _GPSCONFIG_GPSACCURACY._serialized_start=1005
-  _GPSCONFIG_GPSACCURACY._serialized_end=1111
-  _SPORTCONFIG._serialized_start=1113
-  _SPORTCONFIG._serialized_end=1196
-  _SPORTCONTROL._serialized_start=1198
-  _SPORTCONTROL._serialized_end=1325
-  _SPORTCONTROL_COMMAND._serialized_start=1272
-  _SPORTCONTROL_COMMAND._serialized_end=1325
+  _AURAREQ._serialized_end=471
+  _SENSORCONFIG._serialized_start=474
+  _SENSORCONFIG._serialized_end=638
+  _RECORDCONFIG._serialized_start=641
+  _RECORDCONFIG._serialized_end=996
+  _RECORDCONFIG_INTERVAL._serialized_start=861
+  _RECORDCONFIG_INTERVAL._serialized_end=996
+  _IMUCONFIG._serialized_start=998
+  _IMUCONFIG._serialized_end=1117
+  _GPSCONFIG._serialized_start=1120
+  _GPSCONFIG._serialized_end=1912
+  _GPSCONFIG_GPSACCURACY._serialized_start=1459
+  _GPSCONFIG_GPSACCURACY._serialized_end=1743
+  _GPSCONFIG_GPSINTERVAL._serialized_start=1746
+  _GPSCONFIG_GPSINTERVAL._serialized_end=1912
+  _SPORTCONFIG._serialized_start=1914
+  _SPORTCONFIG._serialized_end=1997
+  _SPORTCONTROL._serialized_start=1999
+  _SPORTCONTROL._serialized_end=2126
+  _SPORTCONTROL_COMMAND._serialized_start=2073
+  _SPORTCONTROL_COMMAND._serialized_end=2126
 # @@protoc_insertion_point(module_scope)
